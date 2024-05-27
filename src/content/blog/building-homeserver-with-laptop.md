@@ -15,7 +15,7 @@ tags:
 description: ""
 ---
 
-![](https://img.krdw.site/202403021643017.png?x-oss-process=image/format,webp)
+![](https://img.krdw.me/2024/05/picgo_5381da4949d117c29bf688c8175108d7.png)
 
 最近用一台家里的老旧笔记本搭了一台家用服务器，体验下来还是不错的，于是写一篇博客记录一下。
 
@@ -54,7 +54,7 @@ Ubuntu Server ISO 镜像文件下载地址：https://ubuntu.com/download/server
 
 将 U 盘插入电脑，打开 Rufus，选择下载好的 Ubuntu Server 镜像，分区类型选择“MBR”，文件系统选择“NTFS”，点击“开始”，等待制作完成后拔出 U 盘。
 
-![](https://img.krdw.site/202403022347120.png?x-oss-process=image/format,webp)
+![](https://img.krdw.me/2024/05/picgo_f64268e24a839645c67ab1b90d44f6ff.png)
 
 **(2) 从启动盘引导**
 

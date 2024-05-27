@@ -4,7 +4,7 @@ pubDatetime: 2023-11-03T00:00:00.000+08:00
 modDatetime: 2023-11-03T00:00:00.000+08:00
 title: Commit Message Format
 featured: false
-draft: false
+draft: true
 tags:
   - notes
   - git

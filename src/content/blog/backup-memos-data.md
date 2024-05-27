@@ -23,7 +23,7 @@ description: ""
 
 其中要给 **OSS 访问桶的权限**：
 
-![](https://krdw-memos.oss-cn-chengdu.aliyuncs.com/picgo/202401251632897.png)
+![](https://img.krdw.me/2024/05/picgo_ccef7c2c3c6674a3d95b35f344ceb33d.png)
 
 ### (2) 安装并配置 rclone
 

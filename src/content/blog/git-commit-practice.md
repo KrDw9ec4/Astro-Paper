@@ -4,7 +4,7 @@ pubDatetime: 2023-11-04T00:39:00.000+08:00
 modDatetime: 2023-11-04T00:39:00.000+08:00
 title: git commit 实践（Angular）
 featured: false
-draft: false
+draft: true
 tags:
   - notes
   - git

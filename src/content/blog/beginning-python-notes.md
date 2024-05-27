@@ -4,13 +4,13 @@ pubDatetime: 2024-03-08T16:36:19.000+08:00
 modDatetime: 2024-03-14T17:38:36.000+08:00
 title: 《Python 基础教程》学习笔记
 featured: false
-draft: false
+draft: true
 tags:
   - python
 description: ""
 ---
 
-<center><img src="https://img.krdw.site/202403131528151.jpeg?x-oss-process=image/format,webp" width="135px" height="200px"> </center>
+<center><img src="https://img.krdw.me/2024/05/picgo_247cb547c090d323a0ade28c424fe46d.png" width="135px" height="200px"> </center>
 <center><font size=4>《Python基础教程（第3版）》</font></center>
 <center><font color='#6e6e6e' size=2>作者：MagnusLieHetland</font></center>
 <center><font color='#6e6e6e' size=2>译者：袁国忠</font></center>

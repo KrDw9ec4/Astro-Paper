@@ -5,6 +5,12 @@ title: "关于"
 
 ## 2024 年
 
+### 05-27
+
+从 Hexo 迁移到 Astro，采用 [Astro-Paper](https://github.com/satnaing/astro-paper) 主题。
+
+还是改回用文件名做永久链接而不是时间戳，原来的访问地址采用 Rewrite 重写确保访问正常。
+
 ### 05-15
 
 添加 [sitemap](https://blog.krdw.site/sitemap.xml)、使用 [Umami](https://umami.krdw.site/share/9mBDYU5EsPI6SMEf/blog.krdw.site) 进行统计。
