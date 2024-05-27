@@ -15,34 +15,7 @@ description: ""
 
 对于 RSS 的介绍本文不赘述，你需要知道 RSS 是能将分散孤立的平台的信息聚合到一起，下面我将带你搭建一套流程实现 RSS 信息流，大致思路：**从 RSSHub 和 WeWeRSS 获取 RSS 订阅源链接，部分使用 rss-proxy 进行代理，使用 FreshRSS 作为 RSS 服务端，安卓使用 ReadYou 进行阅读。**
 
-```mermaid
-graph LR
-subgraph "RSS订阅源"
-rss["RSS"]
-rsshub["RSSHub"]
-wewerss["wewe-rss"]
-end
-
-    subgraph "使用代理"
-        rssproxy["rss-proxy"]
-    end
-
-    subgraph "RSS服务端"
-        freshrss["FreshRSS"]
-    end
-
-    subgraph "RSS客户端"
-        readyou["Read You"]
-    end
-
-    rss --> freshrss
-    rss ----> rssproxy
-    rsshub ----> rssproxy
-    rsshub --> freshrss
-    wewerss --> freshrss
-    rssproxy ----> freshrss
-    freshrss --> readyou
-```
+![](https://img.krdw.me/2024/05/picgo_b6f87ede9ec90db53433eb026bc6c2dc.svg)
 
 下面这个表格是这一套流程**大致的空间和内存占用**，如果只是部署这一套流程，那么 1G 内存的服务器就够用了。
 
