@@ -13,13 +13,14 @@
     --color-border: 236, 233, 233;
   }
   html[data-theme="dark"] {
-    --color-fill: 0, 1, 35;
-    --color-accent: 97, 123, 255;
-    --color-text-base: 234, 237, 243;
-    --color-card: 33, 34, 83;
-    --color-card-muted: 12, 14, 79;
-    --color-border: 48, 63, 138;
+    --color-fill: 18, 18, 18;
+    --color-text-base: 245, 245, 245;
+    --color-accent: 225, 74, 57;
+    --color-card: 34, 34, 34;
+    --color-card-muted: 58, 58, 58;
+    --color-border: 80, 80, 80;
   }
+
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
     display: none;
@@ -50,7 +51,7 @@
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
-    prose-h3:italic prose-p:!text-skin-base 
+    prose-h3:prose-p:!text-skin-base 
     prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8
     hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent
     prose-blockquote:border-opacity-50 prose-blockquote:opacity-80

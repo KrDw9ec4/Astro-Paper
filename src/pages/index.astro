@@ -42,15 +42,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>个人介绍，等待补充...</p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">社交平台:</div>
-            <Socials />
-          </div>
-        )
-      }
     </section>
 
     <Hr />
