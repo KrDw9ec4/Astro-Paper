@@ -126,6 +126,59 @@
   pre > code {
     white-space: pre;
   }
+
+  /* 表格基础样式 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    /* 合并表格边框，去掉双线 */
+  }
+
+  /* 表头和单元格的基础样式 */
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    white-space: nowrap;
+    padding: 8px;
+    /* 增加单元格内边距，改善视觉效果 */
+    border: 1px solid #ddd;
+    /* 添加边框以区分单元格 */
+  }
+
+  /* 小屏幕设备上的样式 */
+  @media (max-width: 768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+
+    thead,
+    tbody,
+    tr,
+    th,
+    td {
+      white-space: nowrap;
+    }
+  }
+
+  /* 大屏幕设备上的样式 */
+  @media (min-width: 769px) {
+    table {
+      table-layout: auto;
+      /* 表格布局设置为自动，确保表格宽度自适应 */
+    }
+
+    thead,
+    tbody,
+    tr,
+    th,
+    td {
+      white-space: normal;
+      /* 允许内容换行，避免内容太长撑开表格 */
+    }
+  }
 }
 
 @layer components {
