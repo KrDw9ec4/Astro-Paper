@@ -7,14 +7,11 @@ featured: false
 draft: false
 tags:
   - homeserver
-  - ddns
-  - wireguard
-  - tailscale
-  - cloudflare
+  - network
 description: ""
 ---
 
-正如[这篇博客](https://blog.krdw.site/post/20240302162234/#公网访问)中所说，我外部访问自建服务器用的是 DDNS(v6) + FRP(v4) 以实现 IPv6+IPv4 双栈访问。
+正如[这篇博客](https://blog.krdw.site/posts/building-homeserver-with-laptop/#公网访问)中所说，我外部访问自建服务器用的是 DDNS(v6) + FRP(v4) 以实现 IPv6+IPv4 双栈访问。
 
 然而，不久之后，我发现 SSH 登录出现了问题。经过排查，发现有人通过 FRP 不断扫描端口，导致 SSH 登录受阻。因此，我关闭了 FRP，只用 DDNS 通过 IPv6 进行访问。
 

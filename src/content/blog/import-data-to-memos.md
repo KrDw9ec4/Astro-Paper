@@ -8,7 +8,6 @@ draft: false
 tags:
   - server
   - memos
-  - sqlite
   - python
 description: ""
 ---

@@ -9,7 +9,6 @@ tags:
   - server
   - docker
   - memos
-  - self-hosted
 description: ""
 ---
 

@@ -7,9 +7,7 @@ featured: false
 draft: false
 tags:
   - server
-  - linux
   - ssh
-  - vscode
 description: ""
 ---
 

@@ -17,7 +17,7 @@ description: ""
 
 > 下面主要是记录解决的步骤，如果你想要了解更详细的信息，可以参阅这篇文章：https://hellodk.cn/post/975
 
-> 本文也是对之前学习 git 时做的笔记的补充 > [krdw-git-note#SSH-Key](https://blog.krdw.site/post/20230825202400/#SSH-Key)
+> 本文也是对之前学习 git 时做的笔记的补充 > [krdw-git-note#SSH-Key](https://blog.krdw.site/posts/krdw-git-note/#SSH-Key)
 
 ### 区分 http 和 ssh 代理
 

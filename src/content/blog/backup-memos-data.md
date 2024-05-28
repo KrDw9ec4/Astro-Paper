@@ -8,10 +8,6 @@ draft: false
 tags:
   - server
   - memos
-  - rclone
-  - bash
-  - crontab
-  - oss
 description: ""
 ---
 
