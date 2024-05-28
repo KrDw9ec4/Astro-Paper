@@ -27,7 +27,7 @@ export const SOCIALS: SocialObjects = [
   {
     name: "Github",
     href: "https://github.com/KrDw9ec4",
-    linkTitle: ` KrDw on Github`,
+    linkTitle: `KrDw on Github`,
     active: true,
   },
   {
@@ -52,6 +52,12 @@ export const SOCIALS: SocialObjects = [
     name: "Mail",
     href: "comment@krdw.me",
     linkTitle: `发送邮件到 ${SITE.title}`,
+    active: true,
+  },
+  {
+    name: "RSS",
+    href: "https://blog.krdw.site/rss.xml",
+    linkTitle: `KrDw Publish RSS`,
     active: true,
   },
   {
