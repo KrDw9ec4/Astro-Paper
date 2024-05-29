@@ -35,3 +35,6 @@ pnpm-debug.log*
 .pnp.*
 
 deploy.sh
+draft_template.md
+.stignore
+.stfolder
