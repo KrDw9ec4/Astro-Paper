@@ -7,7 +7,7 @@ featured: true
 draft: false
 tags:
   - homeserver
-description: ""
+description: "介绍一种流程实现 qBittorrent 下载后使用 Rclone + AList webdav 上传到阿里云盘实现高速播放，不受限于家宽上传带宽。"
 ---
 
 由于国内审批制度的存在，阿 B 的动漫大多会延迟三集上线，所以需要自己去找字幕组资源下载下来观看。接下来介绍一种流程实现 qbit 下载后使用 rclone + alist webdav 上传到阿里云盘实现高速播放，不受限于家宽上传带宽。

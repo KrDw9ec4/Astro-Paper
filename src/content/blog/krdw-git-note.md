@@ -9,7 +9,7 @@ tags:
   - notes
   - git
   - ssh
-description: ""
+description: "我的建议是先跟着廖雪峰的图文教程一步一步走一遍 git 工作流程，然后看 GeekHour 的视频教程加深理解，官方文档供后续使用时按需查找。"
 ---
 
 ## 推荐教程

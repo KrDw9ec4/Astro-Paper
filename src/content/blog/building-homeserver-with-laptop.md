@@ -8,7 +8,7 @@ draft: false
 tags:
   - homeserver
   - network
-description: ""
+description: "笔记本安装 Ubuntu Server 系统，路由器支持 IPv6 实现公网 IPv6 访问，宽带有公网 IPv4 或者有一台云服务器实现公网 IPv4 访问，最终实现通过 IPv4 + IPv6 双栈访问服务器，安装 docker 来快速部署和方便管理服务。"
 ---
 
 ![](https://img.krdw.me/2024/05/picgo_5381da4949d117c29bf688c8175108d7.png)

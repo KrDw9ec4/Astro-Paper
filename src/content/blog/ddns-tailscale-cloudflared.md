@@ -8,7 +8,7 @@ draft: false
 tags:
   - homeserver
   - network
-description: ""
+description: "我现在是用 Tailscale 异地组网，不用对外暴露端口很安全，大多数情况能直连成功速度也很快。"
 ---
 
 正如[这篇博客](https://blog.krdw.site/posts/building-homeserver-with-laptop/#公网访问)中所说，我外部访问自建服务器用的是 DDNS(v6) + FRP(v4) 以实现 IPv6+IPv4 双栈访问。

@@ -1,13 +1,13 @@
 ---
 author: KrDw
 pubDatetime: 2024-01-21T22:25:19.000+08:00
-modDatetime: 2024-05-20T12:53:25.000+08:00
+modDatetime: 2024-05-29T16:05:29.000+08:00
 title: 红米 K40S 的养老指南
 featured: false
 draft: false
 tags:
   - android
-description: ""
+description: "选择自己喜欢的 ROM，用 KSU 或 Magisk 刷入 Moto Addon 替换系统软件，优先安装定制版软件。"
 ---
 
 > ⚠️ 2024-05-20 更新：[安卓定制包ElixirOS存在恶意代码 若用户尝试绕过付费则清除所有数据](https://www.landiannews.com/archives/104000.html)
@@ -32,7 +32,7 @@ description: ""
 
 刚刷上 MIUI EEA 就感觉有点不跟手，当时以为这是之前类原生傻快傻快用惯了，但打了局游戏发现这手机确实不太适合 MIUI 了，锁 60 帧不说发热特别严重。不能说骁龙 870 不行，毕竟我只是偶尔打打 CFM，吃不了多少配置，而且之前类原生都没这情况。
 
-![](https://img.krdw.me/2024/05/picgo_00b01acb3de5ee730e581d26af8d3b81.png)
+![](https://img.krdw.dev/2024/05/picgo_00b01acb3de5ee730e581d26af8d3b81.png)
 
 > 这是我玩 CFM 的表现，最低画质最高帧率，一开始 120 帧左右我还觉得可以，后面直接锁死 60 帧。
 
@@ -73,7 +73,7 @@ PS Lineage OS 没有官方构建，没有尝试，但也属此列。
 
 一开机，还是熟悉的界面，还是熟悉的感觉。
 
-![](https://img.krdw.me/2024/05/picgo_0dcf075766d2999eedcfc49efd3efff8.jpeg)
+![](https://img.krdw.dev/2024/05/picgo_0dcf075766d2999eedcfc49efd3efff8.jpeg)
 
 1. 界面风格统一，这点 Project Elixir 算是很好的做到了，虽然不如 PE。
 2. 支持 MIUI 徕卡相机，不得不说能在类原生继续用 MIUI 相机还是不错的😌
@@ -92,7 +92,7 @@ PS Lineage OS 没有官方构建，没有尝试，但也属此列。
 
 电话是有通话录音的，短信通知也有“复制验证码”的功能，日历是按国内安排及时更新的（除夕不放假）。
 
-![](https://img.krdw.me/2024/05/picgo_25af712d5a8a65327204dc3cb504bc95.png)
+![](https://img.krdw.dev/2024/05/picgo_25af712d5a8a65327204dc3cb504bc95.png)
 
 PS KernelSU 是可以用 Moto Addon 的，只需要把“默认卸载模块”关掉就可以了。
 
@@ -118,4 +118,4 @@ LSPosed：**Thanox**，用于后台管理。
 
 其实说是养老，谁知道什么时候心血来潮又刷机了呢。
 
-> 本文提到的相关资源[点击此处](https://alist.krdw.site/Android/%E7%BA%A2%E7%B1%B3%20K40S%20%E7%9A%84%E5%85%BB%E8%80%81%E6%96%B9%E6%A1%88)下载。
+> 本文提到的相关资源[点击此处](https://krdw.dev/8q78k2)下载。

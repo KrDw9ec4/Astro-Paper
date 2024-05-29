@@ -10,7 +10,7 @@ tags:
   - git
   - ssh
   - proxy
-description: ""
+description: "git 的代理有两种，一种是走 https 协议的 http 代理，一种是走 ssh 协议的 ssh 代理。"
 ---
 
 使用 git 时我们肯定离不开 GitHub，但国内网络环境连接到 GitHub 总会出现时好时不好的情况，本文记录一下如何配置 git 代理（http 和 ssh）来解决这个问题。

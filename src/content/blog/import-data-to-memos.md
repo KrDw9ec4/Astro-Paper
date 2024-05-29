@@ -9,7 +9,7 @@ tags:
   - server
   - memos
   - python
-description: ""
+description: "如果是从别的平台迁移到 memos，可能需要将之前的数据导入到 memos，本文是一个思路参考。"
 ---
 
 > ⚠️ 由于 memos 版本更新，数据库结构发生变化，以下内容仅供参考。

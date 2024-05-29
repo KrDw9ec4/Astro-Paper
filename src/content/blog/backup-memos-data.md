@@ -8,7 +8,7 @@ draft: false
 tags:
   - server
   - memos
-description: ""
+description: "创建 Bash 脚本，使用 crontab 创建定期任务，定期通过 Rclone 备份到阿里云 OSS 上。"
 ---
 
 因为数据在自己手上，所以数据备份还是得自己来做，这里讲一下**使用 rclone 备份到阿里云 OSS 上**。

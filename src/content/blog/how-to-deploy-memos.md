@@ -9,7 +9,7 @@ tags:
   - server
   - docker
   - memos
-description: ""
+description: "在云服务器使用 docker compose 快速部署 memos。"
 ---
 
 memos 项目地址：[usememos/memos](https://github.com/usememos/memos)
