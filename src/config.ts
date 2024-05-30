@@ -31,6 +31,24 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
+    name: "Mail",
+    href: "comment@krdw.me",
+    linkTitle: `发送邮件到 ${SITE.title}`,
+    active: true,
+  },
+  {
+    name: "WeChat",
+    href: "https://krdw.dev/wechat",
+    linkTitle: `The Newest Posts on WeChat`,
+    active: true,
+  },
+  {
+    name: "RSS",
+    href: "https://blog.krdw.site/rss.xml",
+    linkTitle: `KrDw Publish RSS`,
+    active: true,
+  },
+  {
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
@@ -47,18 +65,6 @@ export const SOCIALS: SocialObjects = [
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: false,
-  },
-  {
-    name: "Mail",
-    href: "comment@krdw.me",
-    linkTitle: `发送邮件到 ${SITE.title}`,
-    active: true,
-  },
-  {
-    name: "RSS",
-    href: "https://blog.krdw.site/rss.xml",
-    linkTitle: `KrDw Publish RSS`,
-    active: true,
   },
   {
     name: "Twitter",
