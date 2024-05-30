@@ -13,16 +13,16 @@ title: "关于"
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 1 1 50%; padding: 5px;">
-    <img src="https://img.krdw.me/2024/05/picgo_5c6d1caeee1e6fd2bdfac68e1aa9a1e2.png" alt="Image 1" style="width: 100%;">
+    <img src="https://img.krdw.dev/2024/05/picgo_5c6d1caeee1e6fd2bdfac68e1aa9a1e2.png" alt="原博客首页" style="width: 100%;">
   </div>
   <div style="flex: 1 1 50%; padding: 5px;">
-    <img src="https://img.krdw.me/2024/05/picgo_99ae8351442d408b13718266311001cf.png" alt="Image 2" style="width: 100%;">
+    <img src="https://img.krdw.dev/2024/05/picgo_99ae8351442d408b13718266311001cf.png" alt="原博客文章页" style="width: 100%;">
   </div>
   <div style="flex: 1 1 50%; padding: 5px;">
-    <img src="https://img.krdw.me/2024/05/picgo_a525f5129f6fb2b3c3af7666065237ed.png" alt="Image 3" style="width: 100%;">
+    <img src="https://img.krdw.dev/2024/05/picgo_8db2fc022160cbc12ccdc3f6301c7f67.png" alt="现博客首页" style="width: 100%;">
   </div>
   <div style="flex: 1 1 50%; padding: 5px;">
-    <img src="https://img.krdw.me/2024/05/picgo_5bec63c6ce1efc51b27448c822a1158b.png" alt="Image 4" style="width: 100%;">
+    <img src="https://img.krdw.dev/2024/05/picgo_0c60560c3ed79c04b8c0c961874f14e3.png" alt="现博客文章页" style="width: 100%;">
   </div>
 </div>
 
