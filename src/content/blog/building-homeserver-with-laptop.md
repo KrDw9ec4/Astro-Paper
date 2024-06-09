@@ -1,8 +1,8 @@
 ---
 author: KrDw
 pubDatetime: 2024-03-02T16:22:34.000+08:00
-modDatetime: 2024-04-20T01:24:24.000+08:00
-title: 用笔记本来搭建家用服务器
+modDatetime: 2024-06-10T00:00:53.000+08:00
+title: 用笔记本来搭建本地服务器
 featured: true
 draft: false
 tags:
@@ -13,11 +13,11 @@ description: "笔记本安装 Ubuntu Server 系统，路由器支持 IPv6 实现
 
 ![neofetch系统信息](https://img.krdw.dev/2024/05/picgo_5381da4949d117c29bf688c8175108d7.png)
 
-最近用一台家里的老旧笔记本搭了一台家用服务器，体验下来还是不错的，于是写一篇博客记录一下。
+最近用一台家里的老旧笔记本搭了一台本地服务器，体验下来还是不错的，于是写一篇博客记录一下。
 
 主要流程就是安装 Ubuntu Server 系统，路由器支持 IPv6 实现公网 IPv6 访问，宽带有公网 IPv4 或者有一台云服务器实现公网 IPv4 访问，最终实现通过 IPv4 + IPv6 双栈访问服务器，安装 docker 来快速部署和方便管理服务。
 
-使用笔记本搭建家用服务器有两个独特的好处：
+使用笔记本搭建本地服务器有两个独特的好处：
 
 1. 有一块显示屏，当服务器出现问题，并且无法通过 SSH 连接进行调试时，不用额外接一块显示屏就可以直接进行调试。
 2. 有一块电池，当直流供电中断时，一块电池可以起到 UPS 的作用。
@@ -73,7 +73,7 @@ Ubuntu Server ISO 镜像文件下载地址：https://ubuntu.com/download/server
 - 配置阿里云镜像源：https://mirrors.aliyun.com/ubuntu/
 - 勾选 SSH 服务，因为你要通过其他电脑连接到服务器来进行操作。
 
-等待安装完成后，你就拥有了一台家用服务器，一些有关服务器的杂项设置可以参考文末。
+等待安装完成后，你就拥有了一台本地服务器，一些有关服务器的杂项设置可以参考文末。
 
 > 如果你是第一次使用服务器，可以参考我这篇博客：[连接到服务器](https://blog.krdw.site/posts/connect-to-server/)
 
@@ -103,7 +103,7 @@ PS 如果你有动态公网 IPv4 地址的话，也是使用 DDNS 绑定域名�
 
 因为我没有公网 IPv4，所以需要一台云服务器进行内网穿透，这里采用的是 FRP 来实现 IPv4 公网访问。
 
-在云服务器上部署 frps 并开放相应端口，在家用服务器上部署 frpc，进行相应配置，如何写配置网上教程很多。
+在云服务器上部署 frps 并开放相应端口，在本地服务器上部署 frpc，进行相应配置，如何写配置网上教程很多。
 
 我原本是用 docker 部署 frps 和 frpc，但动不动报错，最后采用二进制文件使用系统服务开机自启。
 
@@ -111,7 +111,7 @@ PS 如果你没有云服务器，其实也不一定要配置 IPv4 公网访问�
 
 ### 一些推荐的服务
 
-除了前面提及的 ddns-go 和 frp 之外，这里推荐一些服务让你知道一个家用服务器能干什么。
+除了前面提及的 ddns-go 和 frp 之外，这里推荐一些服务让你知道一个本地服务器能干什么。
 
 - [Dockge](https://github.com/louislam/dockge)：使用 docker compose 来管理 docker 容器。
 - [AList](https://github.com/alist-org/alist)：将多种云存储挂载到一起统一管理，支持大多数网盘及云存储，可以通过 webdav 访问。
@@ -135,6 +135,47 @@ sudo vim /etc/systemd/logind.conf
 + HandleLidSwitch=ignore
 ~~~
 sudo systemctl restart systemd-logind.service
+```
+
+#### 开盖关闭显示器
+
+在设置合盖不休眠后使用过程中，会发现因为合盖导致笔记本散热减弱，后面改成了“开盖关闭显示器”。
+
+使用一行命令开启/关闭显示器，配置开盖时打开显示器。
+
+(1) 安装相关软件
+
+```shell
+sudo apt update
+sudo apt install acpid vbetool
+```
+
+(2) 配置 ACPI 开盖事件
+
+```shell
+sudo vim /etc/acpi/events/lid
+~~~
+event=button/lid LID0 open
+action=/etc/acpi/lid.sh
+~~~
+```
+
+(3) 创建 ACPI 脚本
+
+```shell
+sudo vim /etc/acpi/lid.sh
+~~~
+#!/bin/bash
+sudo vbetool dpms on
+~~~
+sudo chmod +x /etc/acpi/lid.sh
+```
+
+(4) vbetool 命令
+
+```shell
+sudo vbetool dpms on #开启显示器
+sudo vbetool dpms off #关闭显示器
 ```
 
 #### 电池供电主动关机
